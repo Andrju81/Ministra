@@ -9,6 +9,7 @@ services:
       - db
     volumes:
       - /opt/stalker/stalker_portal:/var/www/stalker_portal
+      - /opt/stalker/stalker_portal/epg:/var/www/stalker_portal/epg
     depends_on:
       - db
   db:
